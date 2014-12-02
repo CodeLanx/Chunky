@@ -2,10 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.codelanx</groupId>
-    <artifactId>Chunky</artifactId>
+    <artifactId>chunky</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+    <name>Chunky</name>
     <description>Allows force-resending of chunk information</description>
+
+    <build>
+        <resources>
+            <resource>
+                <targetPath>.</targetPath>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <finalName>${project.name}</finalName>
+    </build>
 
     <repositories>
         <repository>
@@ -63,7 +75,10 @@
         <dependency>
           <groupId>com.comphenix.protocol</groupId>
           <artifactId>ProtocolLib</artifactId>
-          <version>LATEST</version>
+            <version>LATEST</version>
+            <type>jar</type>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/jars/ProtocolLib.jar</systemPath>
         </dependency>
     </dependencies>
 
