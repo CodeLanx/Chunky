@@ -70,7 +70,7 @@
             <version>LATEST</version>
             <type>jar</type>
             <scope>system</scope>
-            <systemPath>${project.basedir}/jars/spigot.jar</systemPath>
+            <systemPath>${project.basedir}/libs/spigot.jar</systemPath>
         </dependency>
         <dependency>
           <groupId>com.comphenix.protocol</groupId>
@@ -78,7 +78,7 @@
             <version>LATEST</version>
             <type>jar</type>
             <scope>system</scope>
-            <systemPath>${project.basedir}/jars/ProtocolLib.jar</systemPath>
+            <systemPath>${project.basedir}/libs/ProtocolLib.jar</systemPath>
         </dependency>
     </dependencies>
 
